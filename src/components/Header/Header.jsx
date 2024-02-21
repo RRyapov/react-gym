@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import {
   HeaderBackground,
   HeaderGraffity,
@@ -15,9 +17,11 @@ import {
 function Header() {
   return (
     <HeaderBackground>
-      <HeaderGraffity>
-        <img src="./img/name-picture.png" alt="header-graffity" />
-      </HeaderGraffity>
+      <Link to="/">
+        <HeaderGraffity>
+          <img src="./img/name-picture.png" alt="header-graffity" />
+        </HeaderGraffity>
+      </Link>
 
       <HeaderStrongMan src="./img/yellow-strong-man.png" alt="strong-man" />
 
@@ -37,7 +41,9 @@ function Header() {
 
       <Navigation>
         <NavigationUL>
-          <NavigationLi>Программы тренировок</NavigationLi>
+          <Link to="/programs">
+            <NavigationLi>Программы тренировок</NavigationLi>
+          </Link>
           <NavigationLi>Услуги</NavigationLi>
           <NavigationLi>СпортЛикбез</NavigationLi>
           <NavigationLi>Бронирование тренажеров</NavigationLi>

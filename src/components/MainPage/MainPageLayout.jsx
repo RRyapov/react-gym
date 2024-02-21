@@ -7,8 +7,8 @@ import {
 } from "../../common/Container";
 
 export const MainSpace = styled.div`
-  width: 100%;
-  height: 100vh;
+  height: fit-content;
+  max-height: max-content;
 `;
 
 export const BoldTitles = css`

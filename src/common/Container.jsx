@@ -1,40 +1,49 @@
 import styled, { css } from "styled-components";
 
 export const Container = styled.div`
-  width: 100%;
   max-width: 1336px;
   margin: 0px auto;
   padding: 0px 10px;
+  height: fit-content;
+  background-size: cover;
+  /* position: relative; */
 `;
 
 export const MainBackground = styled.div`
-  min-height: 100vw;
-  width: 100%;
-
   background-image: url("./img/background-blur.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100vw auto;
 
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 `;
 
 export const Background = styled.div`
-  min-height: 100%;
+  height: auto;
+  min-height: calc(100vh - 30px);
   width: 1440px;
+  margin: 0 auto;
 
   background-image: url("./img/background.png");
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-attachment: fixed;
+  background-size: cover;
+  /* position: fixed; */
 
   display: flex;
   justify-content: center;
 `;
 
 export const Footer = styled.div`
-  background-color: transparent;
+  /* position: fixed; */
+  margin-bottom: auto;
+
+  z-index: 10;
+  width: 100%;
+  height: 30px;
+
+  background: #000;
 `;
 
 export const FlexCenter = css`

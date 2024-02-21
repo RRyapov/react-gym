@@ -1,6 +1,14 @@
 import Header from "./components/Header/Header";
-import MainPage from "./components/MainPage/MainPage";
-import { Container, MainBackground, Background } from "./common/Container";
+import TrainingPrograms from "./pages/TrainingPrograms";
+import MainPage from "./pages/MainPage";
+import { Routes, Route } from "react-router-dom";
+
+import {
+  Container,
+  MainBackground,
+  Background,
+  Footer,
+} from "./common/Container";
 
 function App() {
   return (
@@ -8,9 +16,14 @@ function App() {
       <Background>
         <Container>
           <Header />
-          <MainPage />
+
+          <Routes>
+            <Route path="/" element={<MainPage />} />
+            <Route path="/programs" element={<TrainingPrograms />} />
+          </Routes>
         </Container>
       </Background>
+      <Footer />
     </MainBackground>
   );
 }

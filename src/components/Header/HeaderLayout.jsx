@@ -102,6 +102,7 @@ export const NavigationUL = styled.ul`
 
   display: flex;
   justify-content: space-around;
+  z-index: 4;
 `;
 
 export const NavigationLi = styled.li`
