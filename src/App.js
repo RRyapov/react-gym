@@ -1,17 +1,14 @@
 import Header from "./components/Header/Header";
+import MainPage from "./components/MainPage/MainPage";
 import { Container, MainBackground, Background } from "./common/Container";
-
 
 function App() {
   return (
     <MainBackground>
       <Background>
         <Container>
-          <Header>
-            <div className="App">
-              <header className="App-header">Learn React</header>
-            </div>
-          </Header>
+          <Header />
+          <MainPage />
         </Container>
       </Background>
     </MainBackground>

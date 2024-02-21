@@ -1,8 +1,10 @@
 import styled, { css } from "styled-components";
 
 export const Container = styled.div`
-  min-height: 100%;
-  width: 1336px;
+  width: 100%;
+  max-width: 1336px;
+  margin: 0px auto;
+  padding: 0px 10px;
 `;
 
 export const MainBackground = styled.div`
@@ -39,4 +41,40 @@ export const FlexCenter = css`
   display: flex;
   justify-content: center;
   align-items: center;
+`;
+
+export const BlackTextShadow = css`
+  text-shadow: -0 -2px 2px #000000, 0 -2px 2px #000000, -0 2px 2px #000000,
+    0 2px 2px #000000, -2px -0 2px #000000, 2px -0 2px #000000,
+    -2px 0 2px #000000, 2px 0 2px #000000, -1px -2px 2px #000000,
+    1px -2px 2px #000000, -1px 2px 2px #000000, 1px 2px 2px #000000,
+    -2px -1px 2px #000000, 2px -1px 2px #000000, -2px 1px 2px #000000,
+    2px 1px 2px #000000, -2px -2px 2px #000000, 2px -2px 2px #000000,
+    -2px 2px 2px #000000, 2px 2px 2px #000000, -2px -2px 2px #000000,
+    2px -2px 2px #000000, -2px 2px 2px #000000, 2px 2px 2px #000000;
+`;
+
+export const TitlePattern = css`
+  ${FlexCenter}
+  font-family: "Arial", cursive;
+  font-weight: 400;
+  font-size: 11mm;
+  font-style: italic;
+
+  color: #37dbff;
+  ${BlackTextShadow}
+
+  margin-bottom: 25px;
+`;
+
+export const BlueBlink = css`
+  background: rgb(30, 134, 166);
+  background: linear-gradient(
+    90deg,
+    rgba(30, 134, 166, 1) 2%,
+    rgba(4, 177, 232, 1) 54%,
+    rgba(30, 134, 166, 1) 100%
+  );
+
+  box-shadow: 0px 0px 66px 11px rgba(46, 175, 255, 0.9);
 `;
