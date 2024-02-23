@@ -103,16 +103,26 @@ export const NavigationUL = styled.ul`
   display: flex;
   justify-content: space-around;
   z-index: 4;
+
+  a {
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: aliceblue;
+    text-decoration: none;
+  }
 `;
 
 export const NavigationLi = styled.li`
   ${FlexCenter}
 
+  text-decoration: none;
+
   transition: all 1s ease;
   border-radius: 0px;
   cursor: pointer;
   background: transparent;
-  width: 20%;
 
   height: 35px;
   z-index: 5;

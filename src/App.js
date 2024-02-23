@@ -1,5 +1,5 @@
 import Header from "./components/Header/Header";
-import TrainingPrograms from "./pages/TrainingPrograms";
+import TrainingPrograms from "./pages/TrainingProgramsPage";
 import MainPage from "./pages/MainPage";
 import { Routes, Route } from "react-router-dom";
 

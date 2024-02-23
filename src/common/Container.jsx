@@ -87,3 +87,53 @@ export const BlueBlink = css`
 
   box-shadow: 0px 0px 66px 11px rgba(46, 175, 255, 0.9);
 `;
+
+export const ArticleFontStyle = css`
+  ${FlexCenter}
+  font-family: "Arial", cursive;
+  font-weight: 400;
+  font-size: 9mm;
+  font-style: italic;
+
+  color: #ffffff;
+  ${BlackTextShadow}
+
+  margin-top: 45px;
+
+  text-align: center;
+  line-height: 50px;
+`;
+
+export const ButtonStyle = css`
+  ${FlexCenter}
+
+  width: fit-content;
+  height: 50px;
+
+  background: rgb(0, 104, 136);
+
+  border: #2fb3ff 3px solid;
+  border-radius: 25px;
+
+  font-family: "Anton", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 6mm;
+  color: #ffffff;
+  text-shadow: 2px 2px 2px #012133;
+  padding-bottom: 5px;
+  padding-left: 12px;
+  padding-right: 12px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    ${BlueBlink}
+    transform: scale(1.1);
+    cursor: pointer;
+
+    &:active {
+      transform: scale(0.975);
+      transition: none;
+    }
+  }
+`;
