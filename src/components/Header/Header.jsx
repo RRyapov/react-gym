@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
 import {
   HeaderBackground,
   HeaderGraffity,
@@ -13,8 +12,11 @@ import {
   HeaderStrongMan,
   CartContainer,
 } from "./HeaderLayout";
+import { programStorage } from "../../stores/programsStore";
+import { observer } from "mobx-react-lite";
 
 function Header() {
+  const { getAllPrograms } = programStorage;
   return (
     <HeaderBackground>
       <Link to="/">
@@ -42,7 +44,9 @@ function Header() {
       <Navigation>
         <NavigationUL>
           <Link to="/programs">
-            <NavigationLi>Программы тренировок</NavigationLi>
+            <NavigationLi onClick={getAllPrograms}>
+              Программы тренировок
+            </NavigationLi>
           </Link>
           <NavigationLi>Услуги</NavigationLi>
           <NavigationLi>СпортЛикбез</NavigationLi>

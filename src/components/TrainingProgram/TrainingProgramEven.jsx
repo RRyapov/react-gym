@@ -8,26 +8,20 @@ import {
   ProgramButton,
 } from "../TrainingProgram/TrainingProgramPrevLayout";
 
-function TrainingProgramEven() {
+function TrainingProgramEven({ id, imageUrl, name, shortText, longText }) {
   return (
     <ProgramBlock>
       <ProgramDescription>
         <ProgramTitle>
-          <span>Жиросжигание по-королевски</span>
+          <span>{name}</span>
         </ProgramTitle>
-        <ProgramShortRead>
-          Данная программа представляет собой комплексную процедуру,
-          предполагающую особую схему питания и регулярные силовые тренировки.
-          Основным ее назначением является уменьшение подкожного слоя жира для
-          конечной демонстрации своих результатов в виде наработанной мышечной
-          массы.
-        </ProgramShortRead>
+        <ProgramShortRead>{shortText}</ProgramShortRead>
         <ProgramButton>
           <span>Подробнее</span>
         </ProgramButton>
       </ProgramDescription>
       <ProgramImage>
-        <img src="./img/program-2.png" alt="program-2" />
+        <img src={imageUrl} alt={`program-${id}`} />
       </ProgramImage>
     </ProgramBlock>
   );

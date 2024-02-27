@@ -1,5 +1,5 @@
 import Header from "./components/Header/Header";
-import TrainingPrograms from "./pages/TrainingProgramsPage";
+import TrainingProgramsPage from "./pages/TrainingProgramsPage";
 import MainPage from "./pages/MainPage";
 import { Routes, Route } from "react-router-dom";
 
@@ -19,7 +19,7 @@ function App() {
 
           <Routes>
             <Route path="/" element={<MainPage />} />
-            <Route path="/programs" element={<TrainingPrograms />} />
+            <Route path="/programs" element={<TrainingProgramsPage />} />
           </Routes>
         </Container>
       </Background>

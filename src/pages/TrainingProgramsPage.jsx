@@ -4,26 +4,27 @@ import TrainingProgramOdd from "../components/TrainingProgram/TrainingProgramOdd
 import TrainingProgramEven from "../components/TrainingProgram/TrainingProgramEven";
 import { ProductsTitlesOnMainPage } from "../components/MainPage/MainPageLayout";
 
-function TrainingPrograms() {
+import { programStorage } from "../stores/programsStore";
+import { observer } from "mobx-react-lite";
+
+function TrainingProgramsPage() {
+  const { allPrograms } = programStorage;
+
   return (
     <ProgramPageBlock>
       <ProductsTitlesOnMainPage>Программы тренировок</ProductsTitlesOnMainPage>
+      {allPrograms.map((obj) =>
+        obj.id % 2 === 0 ? (
+          <TrainingProgramEven key={obj.id} {...obj} />
+        ) : (
+          <TrainingProgramOdd key={obj.id} {...obj} />
+        )
+      )}
+      {/* {console.log(allPrograms)}
       <TrainingProgramOdd />
-      <TrainingProgramEven />
+      <TrainingProgramEven />  */}
     </ProgramPageBlock>
   );
-  //   <ProductCardOnMainPage>
-  //     <ProductCardImage>
-  //       <img src="./img/creatine-1.png" alt="creatine-1" />
-  //     </ProductCardImage>
-  //     <ProductCardTitle>
-  //       <span>Optimum Nutrition creatine</span>
-  //     </ProductCardTitle>
-  //     <ProductCardButton>
-  //       <span>Подробнее</span>
-  //     </ProductCardButton>
-  //   </ProductCardOnMainPage>
-  // );
 }
 
-export default TrainingPrograms;
+export default observer(TrainingProgramsPage);
