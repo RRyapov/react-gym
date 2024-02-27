@@ -15,8 +15,7 @@ export const ProgramPageBlock = styled.div`
 export const ProgramBlock = styled.div`
   width: 100%;
   height: fit-content;
-  border: 2px solid;
-  border-color: aliceblue;
+
   /* margin-top: 65px; */
 
   display: flex;
@@ -25,12 +24,13 @@ export const ProgramBlock = styled.div`
 `;
 
 export const ProgramImage = styled.div`
-  max-width: 500px;
-  max-height: 590px;
+  width: 500px;
+  height: 590px;
+  overflow: hidden;
 
   ${FlexCenter}
 
-  border-radius: 100px;
+  border-radius: 50px;
 
   transition: all 0.1s ease-in-out;
 

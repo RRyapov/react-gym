@@ -3,7 +3,6 @@ import {
   FlexCenter,
   BlackTextShadow,
   TitlePattern,
-  BlueBlink,
   ArticleFontStyle,
   ButtonStyle,
 } from "../../common/Container";
