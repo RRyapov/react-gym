@@ -48,6 +48,7 @@ export const MainTitleStyle = css`
 
 export const ProductsTitlesOnMainPage = styled.div`
   ${MainTitleStyle}
+  margin-bottom: 55px;
 `;
 
 export const ProductContainer = styled.div`
