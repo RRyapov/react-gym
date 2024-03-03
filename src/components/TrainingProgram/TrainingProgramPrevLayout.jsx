@@ -15,12 +15,15 @@ export const ProgramPageBlock = styled.div`
 export const ProgramBlock = styled.div`
   width: 100%;
   height: fit-content;
+  min-height: 680px;
+  margin-bottom: 35px;
 
-  /* margin-top: 65px; */
-
-  display: flex;
+  ${FlexCenter}
   justify-content: space-around;
-  align-items: center;
+
+  border: 3px solid #2fb3ff;
+  border-radius: 35px;
+  background-color: rgba(0, 0, 0, 0.5);
 `;
 
 export const ProgramImage = styled.div`
@@ -31,6 +34,7 @@ export const ProgramImage = styled.div`
   ${FlexCenter}
 
   border-radius: 50px;
+  box-sizing: border-box;
 
   transition: all 0.1s ease-in-out;
 
