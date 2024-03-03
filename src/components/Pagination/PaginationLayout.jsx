@@ -25,4 +25,7 @@ export const PaginationLi = styled.li`
   font-weight: 400;
   font-size: xx-large;
   text-decoration: none;
+
+  ${({ isActive }) =>
+    isActive ? "background: rgb(0, 104, 136); border: #2fb3ff 3px solid;" : ""}
 `;

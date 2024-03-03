@@ -7,8 +7,10 @@ import {
   ProgramTitle,
   ProgramButton,
 } from "../TrainingProgram/TrainingProgramPrevLayout";
+import { programStorage } from "../../stores/programsStore";
 
 function TrainingProgramEven({ id, imageUrl, name, shortText, longText }) {
+  const { getNextIdProgram } = programStorage;
   return (
     <ProgramBlock>
       <ProgramDescription>
@@ -17,7 +19,13 @@ function TrainingProgramEven({ id, imageUrl, name, shortText, longText }) {
         </ProgramTitle>
         <ProgramShortRead>{shortText}</ProgramShortRead>
         <ProgramButton>
-          <span>Подробнее</span>
+          <span
+            onClick={() => {
+              console.log("aaa", getNextIdProgram(id));
+            }}
+          >
+            Подробнее
+          </span>
         </ProgramButton>
       </ProgramDescription>
       <ProgramImage>

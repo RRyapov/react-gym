@@ -3,6 +3,7 @@ import { makeAutoObservable } from "mobx";
 
 class ProgramsStore {
   _programs = [];
+  _pageNumber = 1;
   _chosenPageNumber = 0;
 
   constructor() {
@@ -13,40 +14,40 @@ class ProgramsStore {
     return this._programs;
   }
 
-  get programsTotalCount() {
-    return this.allPrograms.length;
+  get pageNumber() {
+    return this._pageNumber;
   }
 
-  get chosenPage() {
-    return this._chosenPageNumber;
+  get pageCount() {
+    return Math.ceil(this.allPrograms.length / 3);
   }
 
-  setAllPrograms = (dataPrograms) => {
-    return (this._programs = dataPrograms);
+  get paginatedPrograms() {
+    return this.allPrograms.slice(this.pageNumber * 3 - 3, this.pageNumber * 3);
+  }
+
+  setPageNumber = (page) => {
+    this._pageNumber = page;
   };
 
-  //   getPaginatedPrograms = (number) => {
-  //     this._programs = this._programs.slice(number * 3 - 3, number * 3);
-  //   };
-
   getProgram = (programId) => {
-    this._programs.find(({ id }) => id === programId);
+    return this._programs.find(({ id }) => id === programId);
   };
 
   getAllPrograms = () => {
     axios.get("http://localhost:3001/programs").then(({ data }) => {
-      this.setAllPrograms(data.slice(0, 3));
+      this._programs = data;
     });
   };
 
-  getPaginatedPrograms = (number) => {
-    axios.get("http://localhost:3001/programs").then(({ data }) => {
-      this.setAllPrograms(data.slice(number * 3 - 3, number * 3));
-    });
+  getNextIdProgram = (id) => {
+    const currentId = this.allPrograms.map(({ id }) => id).indexOf(id);
+    return this.getProgram(this.allPrograms[currentId + 1].id);
   };
 
-  selectChosenPage = (number) => {
-    this._chosenPage = number;
+  getPrevIdProgram = (id) => {
+    const currentId = this.allPrograms.map(({ id }) => id).indexOf(id);
+    return this.allPrograms[currentId - 1].id;
   };
 }
 

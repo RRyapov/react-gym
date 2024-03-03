@@ -52,9 +52,9 @@ export const ProgramTitle = styled.div`
   text-decoration: none;
 `;
 
-export const ProgramShortRead = styled.div`
+export const ProgramPrevWord = styled.div`
   ${ArticleFontStyle}
-  max-width: 530px;
+  width: auto;
   font-size: 8mm;
 `;
 
@@ -62,29 +62,4 @@ export const ProgramButton = styled.button`
   ${ButtonStyle}
   margin-top: 35px;
   margin-bottom: 35px;
-`;
-// export const ProgramButtonStyle = styled.button`
-//   ${ButtonStyle}
-//   margin-top: 35px;
-//   margin-bottom: 35px;
-// `;
-
-export const ProgramPrevWord = styled.div`
-  ${ArticleFontStyle}
-  width: auto;
-  font-size: 8mm;
-  margin-bottom: 55px;
-`;
-
-export const ProgramFinalWord = styled.div`
-  ${ArticleFontStyle}
-  width: auto;
-  font-size: 8mm;
-  margin-bottom: 2dvb5px;
-  display: flex;
-  justify-content: end;
-`;
-
-export const ProgramButtonContainer = styled.div`
-  ${FlexCenter}
 `;

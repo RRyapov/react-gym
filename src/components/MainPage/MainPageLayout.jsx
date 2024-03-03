@@ -78,8 +78,9 @@ export const ProductCardTitle = styled.div`
   ${TitlePattern}
 `;
 
-export const ProductCardButton = styled.button`.
-${ButtonStyle}`;
+export const ProductCardButton = styled.button`
+  ${ButtonStyle}
+`;
 
 export const BlueLine = styled.div`
   ${FlexCenter}

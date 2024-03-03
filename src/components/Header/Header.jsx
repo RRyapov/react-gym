@@ -16,7 +16,6 @@ import { programStorage } from "../../stores/programsStore";
 import { observer } from "mobx-react-lite";
 
 function Header() {
-  const { getAllPrograms } = programStorage;
   return (
     <HeaderBackground>
       <Link to="/">
@@ -44,9 +43,7 @@ function Header() {
       <Navigation>
         <NavigationUL>
           <Link to="/programs">
-            <NavigationLi onClick={getAllPrograms}>
-              Программы тренировок
-            </NavigationLi>
+            <NavigationLi>Программы тренировок</NavigationLi>
           </Link>
           <NavigationLi>Услуги</NavigationLi>
           <NavigationLi>СпортЛикбез</NavigationLi>
