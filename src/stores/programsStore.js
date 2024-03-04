@@ -31,7 +31,8 @@ class ProgramsStore {
   };
 
   getProgram = (programId) => {
-    return this._programs.find(({ id }) => id === programId);
+    if (!programId) return {};
+    return this._programs.find(({ id }) => +id === +programId);
   };
 
   getAllPrograms = () => {

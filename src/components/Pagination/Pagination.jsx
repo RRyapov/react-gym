@@ -1,11 +1,7 @@
 import React from "react";
-import { programStorage } from "../../stores/programsStore";
+import { programStorage } from "../../stores";
 import { observer } from "mobx-react-lite";
-import {
-  PaginationLayout,
-  PaginationBlock,
-  PaginationLi,
-} from "./PaginationLayout";
+import { PaginationLayout, PaginationBlock, PaginationLi } from "./styles";
 
 function Pagination() {
   const { pageCount, pageNumber, setPageNumber, chosenPage } = programStorage;

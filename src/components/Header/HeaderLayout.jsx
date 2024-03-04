@@ -1,12 +1,13 @@
 import styled from "styled-components";
-import { FlexCenter } from "../../common/Container";
+import { FlexCenter } from "../../common/ui/Container";
 
 export const HeaderBackground = styled.div`
   height: 274px;
   width: 1336px;
 
   background-repeat: no-repeat;
-  background-image: url("./img/header-background.png");
+  background-size: 1336px;
+  background-image: url("https://i.postimg.cc/sf9tbKcL/header-background.png");
   position: relative;
   display: flex;
   flex-direction: column;

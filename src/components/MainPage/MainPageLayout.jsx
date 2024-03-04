@@ -5,7 +5,7 @@ import {
   TitlePattern,
   ArticleFontStyle,
   ButtonStyle,
-} from "../../common/Container";
+} from "../../common/ui/Container";
 
 export const MainSpace = styled.div`
   height: fit-content;
@@ -63,7 +63,7 @@ export const ProductCardOnMainPage = styled.div`
 `;
 
 export const ProductCardImage = styled.div`
-  ${FlexCenter}
+  ${FlexCenter};
   margin-top: 70px;
   margin-bottom: 25px;
   height: 315px;

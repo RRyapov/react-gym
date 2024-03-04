@@ -15,18 +15,13 @@ export const ProgramPageBlock = styled.div`
 export const ProgramBlock = styled.div`
   width: 100%;
   height: fit-content;
-  min-height: 680px;
-  margin-bottom: 35px;
 
-  ${FlexCenter}
+  /* margin-top: 65px; */
+
+  display: flex;
   justify-content: space-around;
-
-  border: 3px solid #2fb3ff;
-  border-radius: 35px;
-  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
 `;
-
-export const ProgramImageAndPriceBlock = styled.div``;
 
 export const ProgramImage = styled.div`
   width: 500px;
@@ -36,7 +31,6 @@ export const ProgramImage = styled.div`
   ${FlexCenter}
 
   border-radius: 50px;
-  box-sizing: border-box;
 
   transition: all 0.1s ease-in-out;
 
@@ -58,9 +52,9 @@ export const ProgramTitle = styled.div`
   text-decoration: none;
 `;
 
-export const ProgramShortRead = styled.div`
+export const ProgramPrevWord = styled.div`
   ${ArticleFontStyle}
-  max-width: 530px;
+  width: auto;
   font-size: 8mm;
 `;
 
@@ -68,24 +62,4 @@ export const ProgramButton = styled.button`
   ${ButtonStyle}
   margin-top: 35px;
   margin-bottom: 35px;
-`;
-
-export const ProgramPrevWord = styled.div`
-  ${ArticleFontStyle}
-  width: auto;
-  font-size: 8mm;
-  margin-bottom: 55px;
-`;
-
-export const ProgramFinalWord = styled.div`
-  ${ArticleFontStyle}
-  width: auto;
-  font-size: 8mm;
-  margin-bottom: 2dvb5px;
-  display: flex;
-  justify-content: end;
-`;
-
-export const ProgramButtonContainer = styled.div`
-  ${FlexCenter}
 `;

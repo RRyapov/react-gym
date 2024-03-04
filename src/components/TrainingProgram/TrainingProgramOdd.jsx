@@ -7,6 +7,7 @@ import {
   ProgramTitle,
   ProgramButton,
 } from "../TrainingProgram/TrainingProgramPrevLayout";
+import { programStorage } from "../../stores/programsStore";
 
 function TrainingProgramOdd({ id, imageUrl, name, shortText, longText }) {
   return (
@@ -20,7 +21,7 @@ function TrainingProgramOdd({ id, imageUrl, name, shortText, longText }) {
         </ProgramTitle>
         <ProgramShortRead>{shortText}</ProgramShortRead>
         <ProgramButton>
-          <span>Подробнее</span>
+          <span onClick={() => console.log(name)}>Подробнее</span>
         </ProgramButton>
       </ProgramDescription>
     </ProgramBlock>

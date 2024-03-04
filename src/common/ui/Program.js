@@ -4,8 +4,8 @@ import {
   ArticleFontStyle,
   BlueBlink,
   ButtonStyle,
-} from "../../common/ui/Container";
-import { MainTitleStyle } from "../MainPage/MainPageLayout";
+} from "./Container";
+import { MainTitleStyle } from "./Title";
 
 export const ProgramPageBlock = styled.div`
   width: 100%;
@@ -25,8 +25,6 @@ export const ProgramBlock = styled.div`
   border-radius: 35px;
   background-color: rgba(0, 0, 0, 0.5);
 `;
-
-export const ProgramImageAndPriceBlock = styled.div``;
 
 export const ProgramImage = styled.div`
   width: 500px;
@@ -69,6 +67,11 @@ export const ProgramButton = styled.button`
   margin-top: 35px;
   margin-bottom: 35px;
 `;
+// export const ProgramButtonStyle = styled.button`
+//   ${ButtonStyle}
+//   margin-top: 35px;
+//   margin-bottom: 35px;
+// `;
 
 export const ProgramPrevWord = styled.div`
   ${ArticleFontStyle}

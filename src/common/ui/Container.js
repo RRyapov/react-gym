@@ -10,7 +10,7 @@ export const Container = styled.div`
 `;
 
 export const MainBackground = styled.div`
-  background-image: url("./img/background-blur.png");
+  background-image: url("https://i.postimg.cc/7YJSftWs/background-blur.png");
 
   width: 100%;
   background-repeat: no-repeat;
@@ -26,7 +26,7 @@ export const Background = styled.div`
   width: 1440px;
   margin: 0 auto;
 
-  background-image: url("./img/background.png");
+  background-image: url("https://i.postimg.cc/WbScqSqZ/background.png");
   background-repeat: no-repeat;
   background-size: cover;
   /* position: fixed; */

@@ -7,7 +7,9 @@ import {
   ProgramButtonContainer,
 } from "../components/TrainingProgram/TrainingProgramPrevLayout";
 import TrainingProgramOdd from "../components/TrainingProgram/TrainingProgramOdd";
-import TrainingProgramEven from "../components/TrainingProgram/TrainingProgramEven";
+import TrainingProgram, {
+  trainingProgramPosition,
+} from "../components/TrainingProgram/TrainingProgram";
 import { ProductsTitlesOnMainPage } from "../components/MainPage/MainPageLayout";
 import Pagination from "../components/Pagination/Pagination";
 
@@ -16,6 +18,7 @@ import { observer } from "mobx-react-lite";
 
 function TrainingProgramsPage() {
   const { paginatedPrograms } = programStorage;
+  const { getProgram } = programStorage;
 
   return (
     <ProgramPageBlock>
@@ -33,13 +36,15 @@ function TrainingProgramsPage() {
       <ProgramButtonContainer>
         <ProgramButton>Подобрать программу тренировок</ProgramButton>
       </ProgramButtonContainer>
-      {paginatedPrograms.map((obj) =>
-        obj.id % 2 === 0 ? (
-          <TrainingProgramEven key={obj.id} {...obj} />
-        ) : (
-          <TrainingProgramOdd key={obj.id} {...obj} />
-        )
-      )}
+      {paginatedPrograms.map((program) => {
+        const position =
+          program.id % 2 === 0
+            ? trainingProgramPosition.right
+            : trainingProgramPosition.left;
+        return (
+          <TrainingProgram position={position} key={program.id} {...program} />
+        );
+      })}
       <Pagination />
     </ProgramPageBlock>
   );

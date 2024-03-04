@@ -12,19 +12,23 @@ import {
   HeaderStrongMan,
   CartContainer,
 } from "./HeaderLayout";
-import { programStorage } from "../../stores/programsStore";
-import { observer } from "mobx-react-lite";
 
 function Header() {
   return (
     <HeaderBackground>
       <Link to="/">
         <HeaderGraffity>
-          <img src="./img/name-picture.png" alt="header-graffity" />
+          <img
+            src="https://i.postimg.cc/RZcCYwWV/name-picture.png"
+            alt="header-graffity"
+          />
         </HeaderGraffity>
       </Link>
 
-      <HeaderStrongMan src="./img/yellow-strong-man.png" alt="strong-man" />
+      <HeaderStrongMan
+        src="https://i.postimg.cc/V6HztRV4/yellow-strong-man.png"
+        alt="strong-man"
+      />
 
       <CartArea>
         <CartContainer>
@@ -32,7 +36,10 @@ function Header() {
             <span>1</span>
           </CartCountPlace>
           <CartImage>
-            <img src="./img/cart-minipicture.png" alt="small cart icon" />
+            <img
+              src="https://i.postimg.cc/q7D7c4t8/cart-minipicture.png"
+              alt="small cart icon"
+            />
           </CartImage>
           <CartCountPlace style={{ "margin-top": "0px" }}>
             <span>1800 ₽</span>
