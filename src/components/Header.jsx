@@ -12,7 +12,7 @@ import {
   NavigationLi,
   HeaderStrongMan,
   CartContainer,
-} from "../../common";
+} from "../common";
 
 function Header() {
   return (

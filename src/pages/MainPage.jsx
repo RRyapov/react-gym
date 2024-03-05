@@ -31,7 +31,7 @@ function MainPage() {
         <ProductContainer>
           <ProductCardOnMainPage>
             <ProductCardImage>
-              <img src="./img/product-1.png" alt="protein-1" />
+              <img src="./img/products/product-1.png" alt="protein-1" />
             </ProductCardImage>
             <ProductCardTitle>
               <span>Optimum Nutrition protein</span>

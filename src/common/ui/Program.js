@@ -3,6 +3,10 @@ import { FlexCenter, BlueBlink, ButtonStyle } from "./Container";
 import { ArticleFontStyle } from "./Title";
 import { MainTitleStyle } from "./Title";
 
+export const GeneralProgramPageBlock = styled.div`
+  ${FlexCenter};
+`;
+
 export const ProgramPageBlock = styled.div`
   width: 100%;
   height: fit-content;
@@ -99,10 +103,14 @@ export const ProgramLongRead = styled.div`
   margin-bottom: -70px;
 `;
 
-export const ProgramButton = styled.button`
+export const ProgramButtonStyle = css`
   ${ButtonStyle}
   margin-top: 35px;
   margin-bottom: 35px;
+`;
+
+export const ProgramButton = styled.button`
+  ${ProgramButtonStyle}
 `;
 
 export const ProgramPrevWord = styled.div`

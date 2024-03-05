@@ -1,5 +1,5 @@
 import React, { useEffect, createContext } from "react";
-import Header from "./components/Header/Header";
+import Header from "./components/Header";
 import TrainingProgramsPage from "./pages/ProgramsPage";
 import DetailedTrainingProgramPage from "./pages/DetailedTrainingProgramPage";
 import MainPage from "./pages/MainPage";
