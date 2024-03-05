@@ -1,10 +1,9 @@
-import React, { useState, useEffect, useContext, createContext } from "react";
+import React, { useEffect, createContext } from "react";
 import Header from "./components/Header/Header";
-import TrainingProgramsPage from "./pages/TrainingProgramsPage";
-import DetailedTrainingProgramPage from "./pages/DetailedProgramPage/DetailedTrainingProgramPage";
+import TrainingProgramsPage from "./pages/ProgramsPage";
+import DetailedTrainingProgramPage from "./pages/DetailedTrainingProgramPage";
 import MainPage from "./pages/MainPage";
-import { Routes, Route, useParams } from "react-router-dom";
-// import { ProgramContext } from "./components/TrainingProgram/TrainingProgramEven";
+import { Routes, Route } from "react-router-dom";
 
 import {
   Container,

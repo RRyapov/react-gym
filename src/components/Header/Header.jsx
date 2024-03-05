@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 import {
   HeaderBackground,
   HeaderGraffity,
@@ -11,7 +12,7 @@ import {
   NavigationLi,
   HeaderStrongMan,
   CartContainer,
-} from "./HeaderLayout";
+} from "../../common";
 
 function Header() {
   return (

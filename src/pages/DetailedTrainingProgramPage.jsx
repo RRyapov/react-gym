@@ -1,6 +1,6 @@
-import React, { useContext } from "react";
+import React from "react";
 
-import { ProductsTitlesOnMainPage } from "../../components/MainPage/MainPageLayout";
+import { ProductsTitlesOnMainPage } from "../components/MainPageLayout";
 
 import {
   ProgramBlock,
@@ -10,8 +10,8 @@ import {
   ProgramTitle,
   ProgramButton,
   ProgramPageBlock,
-} from "../../components/TrainingProgram/TrainingProgramPrevLayout";
-import { programStorage } from "../../stores/programsStore";
+} from "../common";
+import { programStorage } from "../stores/programsStore";
 import { observer } from "mobx-react-lite";
 import { useParams } from "react-router-dom";
 

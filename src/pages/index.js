@@ -1,3 +1,3 @@
-export { DetailedTrainingProgramPage } from "./DetailedProgramPage/DetailedTrainingProgramPage";
+export { DetailedTrainingProgramPage } from "./DetailedTrainingProgramPage";
 export { MainPage } from "./MainPage";
-export { TrainingProgramsPage } from "./TrainingProgramsPage";
+export { TrainingProgramsPage } from "./ProgramsPage";

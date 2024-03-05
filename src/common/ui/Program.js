@@ -22,6 +22,8 @@ export const ProgramBlock = styled.div`
   background-color: rgba(0, 0, 0, 0.5);
 `;
 
+export const ProgramImageAndPriceBlock = styled.div``;
+
 export const ProgramImage = styled.div`
   width: 500px;
   height: 590px;
@@ -63,11 +65,6 @@ export const ProgramButton = styled.button`
   margin-top: 35px;
   margin-bottom: 35px;
 `;
-// export const ProgramButtonStyle = styled.button`
-//   ${ButtonStyle}
-//   margin-top: 35px;
-//   margin-bottom: 35px;
-// `;
 
 export const ProgramPrevWord = styled.div`
   ${ArticleFontStyle}

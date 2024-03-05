@@ -5,20 +5,18 @@ import {
   ProgramFinalWord,
   ProgramButton,
   ProgramButtonContainer,
-} from "../components/TrainingProgram/TrainingProgramPrevLayout";
-import TrainingProgramOdd from "../components/TrainingProgram/TrainingProgramOdd";
+} from "../common";
 import TrainingProgram, {
   trainingProgramPosition,
 } from "../components/TrainingProgram/TrainingProgram";
-import { ProductsTitlesOnMainPage } from "../components/MainPage/MainPageLayout";
+import { ProductsTitlesOnMainPage } from "../components/MainPageLayout";
 import Pagination from "../components/Pagination/Pagination";
 
 import { programStorage } from "../stores/programsStore";
 import { observer } from "mobx-react-lite";
 
-function TrainingProgramsPage() {
+function ProgramsPage() {
   const { paginatedPrograms } = programStorage;
-  const { getProgram } = programStorage;
 
   return (
     <ProgramPageBlock>
@@ -50,4 +48,4 @@ function TrainingProgramsPage() {
   );
 }
 
-export default observer(TrainingProgramsPage);
+export default observer(ProgramsPage);
