@@ -6,10 +6,11 @@ import {
   ProgramBlock,
   ProgramImage,
   ProgramDescription,
-  ProgramShortRead,
+  ProgramTitleBlock,
   ProgramTitle,
   ProgramButton,
   ProgramPageBlock,
+  ProgramLongRead,
 } from "../common";
 import { programStorage } from "../stores/programsStore";
 import { observer } from "mobx-react-lite";
@@ -22,21 +23,22 @@ function DetailedTrainingProgramPage() {
   return (
     <ProgramPageBlock>
       <ProductsTitlesOnMainPage>Программы тренировок</ProductsTitlesOnMainPage>
-
+      <ProgramTitleBlock>
+        <ProgramTitle>
+          <span>{name}</span>
+        </ProgramTitle>
+      </ProgramTitleBlock>
       <ProgramBlock>
-        <ProgramImage>
-          <img src={imageUrl} alt="program" />
-        </ProgramImage>
         <ProgramDescription>
-          <ProgramTitle>
-            <span>{name}</span>
-          </ProgramTitle>
-          <ProgramShortRead>{longText}</ProgramShortRead>
+          <ProgramLongRead>{longText}</ProgramLongRead>
+          <SportArticleTitle>{price} руб.</SportArticleTitle>
           <ProgramButton>
             <span onClick={() => console.log(getProgram())}>Купить</span>
           </ProgramButton>
-          <SportArticleTitle>{price} руб.</SportArticleTitle>
         </ProgramDescription>
+        <ProgramImage>
+          <img src={imageUrl} alt="program" />
+        </ProgramImage>
       </ProgramBlock>
     </ProgramPageBlock>
   );

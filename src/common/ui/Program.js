@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { FlexCenter, BlueBlink, ButtonStyle } from "./Container";
 import { ArticleFontStyle } from "./Title";
 import { MainTitleStyle } from "./Title";
@@ -6,6 +6,14 @@ import { MainTitleStyle } from "./Title";
 export const ProgramPageBlock = styled.div`
   width: 100%;
   height: fit-content;
+  ${FlexCenter}
+  flex-direction: column;
+`;
+
+export const ProgramBorder = css`
+  border: 3px solid #2fb3ff;
+  border-radius: 35px;
+  background-color: rgba(0, 0, 0, 0.5);
 `;
 
 export const ProgramBlock = styled.div`
@@ -17,17 +25,25 @@ export const ProgramBlock = styled.div`
   ${FlexCenter}
   justify-content: space-around;
 
-  border: 3px solid #2fb3ff;
-  border-radius: 35px;
-  background-color: rgba(0, 0, 0, 0.5);
+  ${ProgramBorder}
 `;
 
-export const ProgramImageAndPriceBlock = styled.div``;
+export const ProgramTitleBlock = styled.div`
+  ${ProgramBorder}
+  ${FlexCenter}
+  width: fit-content;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 15px;
+
+  margin-bottom: 45px;
+`;
 
 export const ProgramImage = styled.div`
   width: 500px;
   height: 590px;
   overflow: hidden;
+  margin-left: 45px;
 
   ${FlexCenter}
 
@@ -45,7 +61,9 @@ export const ProgramDescription = styled.section`
   max-width: 540px;
   ${FlexCenter}
   flex-direction: column;
-  justify-content: space-around;
+  margin-left: 75px;
+  /* margin-right: 35px; */
+  /* justify-content: space-around; */
 
   a {
     text-decoration: none;
@@ -64,12 +82,21 @@ export const ProgramTitle = styled.div`
   ${MainTitleStyle}
   text-align: center;
   text-decoration: none;
+  margin-bottom: 60px;
 `;
 
 export const ProgramShortRead = styled.div`
   ${ArticleFontStyle}
   max-width: 530px;
   font-size: 8mm;
+`;
+
+export const ProgramLongRead = styled.div`
+  ${ArticleFontStyle}
+  width: 750px;
+  font-size: 8mm;
+  margin-left: 25px;
+  margin-bottom: -70px;
 `;
 
 export const ProgramButton = styled.button`
