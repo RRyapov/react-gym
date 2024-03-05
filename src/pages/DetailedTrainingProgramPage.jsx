@@ -1,7 +1,7 @@
 import React from "react";
 
-import { ProductsTitlesOnMainPage } from "../components/MainPageLayout";
-
+import { ProductsTitlesOnMainPage } from "../common/ui/MainPage";
+import { SportArticleTitle } from "../common/ui/MainPage";
 import {
   ProgramBlock,
   ProgramImage,
@@ -35,7 +35,7 @@ function DetailedTrainingProgramPage() {
           <ProgramButton>
             <span onClick={() => console.log(getProgram())}>Купить</span>
           </ProgramButton>
-          {price}
+          <SportArticleTitle>{price} руб.</SportArticleTitle>
         </ProgramDescription>
       </ProgramBlock>
     </ProgramPageBlock>

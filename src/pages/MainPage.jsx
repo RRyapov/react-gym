@@ -15,7 +15,7 @@ import {
   TrainerAvatar,
   SportArticleTitle,
   ShortReadSportArticle,
-} from "../components/MainPageLayout";
+} from "../common";
 
 function MainPage() {
   return (

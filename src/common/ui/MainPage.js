@@ -1,27 +1,16 @@
-import styled, { css } from "styled-components";
-import { FlexCenter, ButtonStyle } from "../common/ui/Container";
+import styled from "styled-components";
+import { FlexCenter, ButtonStyle } from "./Container";
 import {
   TitlePattern,
   ArticleFontStyle,
   BlackTextShadow,
-} from "../common/ui/Title";
+  BoldTitles,
+  MainTitleStyle,
+} from "./Title";
 
 export const MainSpace = styled.div`
   height: fit-content;
   max-height: max-content;
-`;
-
-export const BoldTitles = css`
-  ${FlexCenter}
-
-  width: 100%;
-  height: fit-content;
-  margin-top: 30px;
-  transition: all 1s ease-in-out;
-
-  &:hover {
-    transform: scale(1.1);
-  }
 `;
 
 export const GeneralTitle = styled.div`
@@ -30,19 +19,6 @@ export const GeneralTitle = styled.div`
 
 export const ProductsOnMainPage = styled.div`
   height: fit-content;
-`;
-
-export const MainTitleStyle = css`
-  ${BoldTitles}
-
-  font-family: "Anton", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 14mm;
-  height: fit-content;
-  color: #1dd6ff;
-  text-shadow: 15px 15px 15px #012133;
-  text-decoration: underline;
 `;
 
 export const ProductsTitlesOnMainPage = styled.div`

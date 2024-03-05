@@ -5,11 +5,11 @@ import {
   ProgramFinalWord,
   ProgramButton,
   ProgramButtonContainer,
+  ProductsTitlesOnMainPage,
 } from "../common";
 import TrainingProgram, {
   trainingProgramPosition,
 } from "../components/TrainingProgram/TrainingProgram";
-import { ProductsTitlesOnMainPage } from "../components/MainPageLayout";
 import Pagination from "../components/Pagination/Pagination";
 
 import { programStorage } from "../stores/programsStore";

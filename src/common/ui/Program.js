@@ -46,6 +46,18 @@ export const ProgramDescription = styled.section`
   ${FlexCenter}
   flex-direction: column;
   justify-content: space-around;
+
+  a {
+    text-decoration: none;
+  }
+
+  &:focus,
+  &:hover,
+  &:visited,
+  &:link,
+  &:active {
+    text-decoration: none;
+  }
 `;
 
 export const ProgramTitle = styled.div`
