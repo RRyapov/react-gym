@@ -4,7 +4,7 @@ import { observer } from "mobx-react-lite";
 import { PaginationLayout, PaginationBlock, PaginationLi } from "./styles";
 
 function Pagination() {
-  const { pageCount, pageNumber, setPageNumber, chosenPage } = programStorage;
+  const { pageCount, pageNumber, setPageNumber } = programStorage;
   const pageNumbers = [];
   for (let i = 1; i <= pageCount; i++) {
     pageNumbers.push(i);

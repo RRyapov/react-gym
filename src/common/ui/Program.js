@@ -1,10 +1,6 @@
 import styled from "styled-components";
-import {
-  FlexCenter,
-  ArticleFontStyle,
-  BlueBlink,
-  ButtonStyle,
-} from "./Container";
+import { FlexCenter, BlueBlink, ButtonStyle } from "./Container";
+import { ArticleFontStyle } from "./Title";
 import { MainTitleStyle } from "./Title";
 
 export const ProgramPageBlock = styled.div`

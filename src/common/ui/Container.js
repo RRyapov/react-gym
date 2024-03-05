@@ -52,29 +52,29 @@ export const FlexCenter = css`
   align-items: center;
 `;
 
-export const BlackTextShadow = css`
-  text-shadow: -0 -2px 2px #000000, 0 -2px 2px #000000, -0 2px 2px #000000,
-    0 2px 2px #000000, -2px -0 2px #000000, 2px -0 2px #000000,
-    -2px 0 2px #000000, 2px 0 2px #000000, -1px -2px 2px #000000,
-    1px -2px 2px #000000, -1px 2px 2px #000000, 1px 2px 2px #000000,
-    -2px -1px 2px #000000, 2px -1px 2px #000000, -2px 1px 2px #000000,
-    2px 1px 2px #000000, -2px -2px 2px #000000, 2px -2px 2px #000000,
-    -2px 2px 2px #000000, 2px 2px 2px #000000, -2px -2px 2px #000000,
-    2px -2px 2px #000000, -2px 2px 2px #000000, 2px 2px 2px #000000;
-`;
+// export const BlackTextShadow = css`
+//   text-shadow: -0 -2px 2px #000000, 0 -2px 2px #000000, -0 2px 2px #000000,
+//     0 2px 2px #000000, -2px -0 2px #000000, 2px -0 2px #000000,
+//     -2px 0 2px #000000, 2px 0 2px #000000, -1px -2px 2px #000000,
+//     1px -2px 2px #000000, -1px 2px 2px #000000, 1px 2px 2px #000000,
+//     -2px -1px 2px #000000, 2px -1px 2px #000000, -2px 1px 2px #000000,
+//     2px 1px 2px #000000, -2px -2px 2px #000000, 2px -2px 2px #000000,
+//     -2px 2px 2px #000000, 2px 2px 2px #000000, -2px -2px 2px #000000,
+//     2px -2px 2px #000000, -2px 2px 2px #000000, 2px 2px 2px #000000;
+// `;
 
-export const TitlePattern = css`
-  ${FlexCenter}
-  font-family: "Arial", cursive;
-  font-weight: 400;
-  font-size: 11mm;
-  font-style: italic;
+// export const TitlePattern = css`
+//   ${FlexCenter}
+//   font-family: "Arial", cursive;
+//   font-weight: 400;
+//   font-size: 11mm;
+//   font-style: italic;
 
-  color: #37dbff;
-  ${BlackTextShadow}
+//   color: #37dbff;
+//   ${BlackTextShadow}
 
-  margin-bottom: 25px;
-`;
+//   margin-bottom: 25px;
+// `;
 
 export const BlueBlink = css`
   background: rgb(30, 134, 166);
@@ -88,21 +88,21 @@ export const BlueBlink = css`
   box-shadow: 0px 0px 66px 11px rgba(46, 175, 255, 0.9);
 `;
 
-export const ArticleFontStyle = css`
-  ${FlexCenter}
-  font-family: "Arial", cursive;
-  font-weight: 400;
-  font-size: 9mm;
-  font-style: italic;
+// export const ArticleFontStyle = css`
+//   ${FlexCenter}
+//   font-family: "Arial", cursive;
+//   font-weight: 400;
+//   font-size: 9mm;
+//   font-style: italic;
 
-  color: #ffffff;
-  ${BlackTextShadow}
+//   color: #ffffff;
+//   ${BlackTextShadow}
 
-  margin-top: 45px;
+//   margin-top: 45px;
 
-  text-align: center;
-  line-height: 50px;
-`;
+//   text-align: center;
+//   line-height: 50px;
+// `;
 
 export const ButtonStyle = css`
   ${FlexCenter}

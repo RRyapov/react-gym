@@ -1,11 +1,10 @@
 import styled, { css } from "styled-components";
+import { FlexCenter, ButtonStyle } from "../../common/ui/Container";
 import {
-  FlexCenter,
-  BlackTextShadow,
   TitlePattern,
   ArticleFontStyle,
-  ButtonStyle,
-} from "../../common/ui/Container";
+  BlackTextShadow,
+} from "../../common/ui/Title";
 
 export const MainSpace = styled.div`
   height: fit-content;

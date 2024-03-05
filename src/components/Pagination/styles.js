@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
-import { TitlePattern, ButtonStyle } from "../../common/ui/Container";
+import { ButtonStyle } from "../../common/ui/Container";
+import { TitlePattern } from "../../common/ui/Title";
 
 export const PaginationLayout = styled.div`
   ${TitlePattern}
