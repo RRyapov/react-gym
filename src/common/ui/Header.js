@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { FlexCenter } from "../../common/ui/Container";
+
+import { FlexCenter } from "./Container";
 
 export const HeaderBackground = styled.div`
   height: 274px;

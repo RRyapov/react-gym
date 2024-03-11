@@ -1,4 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
+import { observer } from "mobx-react-lite";
+
 import {
   ProgramPageBlock,
   ProgramPrevWord,
@@ -7,15 +9,14 @@ import {
   ProgramButtonContainer,
   ProductsTitlesOnMainPage,
 } from "../common";
-import TrainingProgram, {
+import {
   trainingProgramPosition,
-} from "../components/TrainingProgram/TrainingProgram";
-import Pagination from "../components/Pagination/Pagination";
+  Pagination,
+  TrainingProgram,
+} from "../components";
+import { programStorage } from "../stores";
 
-import { programStorage } from "../stores/programsStore";
-import { observer } from "mobx-react-lite";
-
-function ProgramsPage() {
+export const ProgramsPage = observer(() => {
   const { paginatedPrograms } = programStorage;
 
   return (
@@ -46,6 +47,4 @@ function ProgramsPage() {
       <Pagination />
     </ProgramPageBlock>
   );
-}
-
-export default observer(ProgramsPage);
+});

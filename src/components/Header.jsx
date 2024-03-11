@@ -14,7 +14,7 @@ import {
   CartContainer,
 } from "../common";
 
-function Header() {
+export const Header = () => {
   return (
     <HeaderBackground>
       <Link to="/">
@@ -61,6 +61,4 @@ function Header() {
       </Navigation>
     </HeaderBackground>
   );
-}
-
-export default Header;
+};

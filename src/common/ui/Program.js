@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
+
 import { FlexCenter, BlueBlink, ButtonStyle } from "./Container";
-import { ArticleFontStyle } from "./Title";
-import { MainTitleStyle } from "./Title";
+import { ArticleFontStyle, MainTitleStyle } from "./Title";
 
 export const GeneralProgramPageBlock = styled.div`
   ${FlexCenter};
@@ -66,8 +66,6 @@ export const ProgramDescription = styled.section`
   ${FlexCenter}
   flex-direction: column;
   margin-left: 75px;
-  /* margin-right: 35px; */
-  /* justify-content: space-around; */
 
   a {
     text-decoration: none;

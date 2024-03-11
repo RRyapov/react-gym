@@ -1,1 +1,1 @@
-export { TrainingProgram } from "./TrainingProgram";
+export * from "./TrainingProgram";

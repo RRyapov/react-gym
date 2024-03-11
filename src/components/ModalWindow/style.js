@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 import { FlexCenter, ArticleFontStyle, ProgramButtonStyle } from "../../common";
 
 export const ModalStyle = styled.div`
@@ -31,9 +32,7 @@ export const ModalIsClosed = styled.div`
 `;
 
 export const ModalContent = styled.div`
-  /* padding: 20px; */
   border-radius: 25px;
-  /* background-color: rgba(89, 163, 181, 0.9); */
   width: 400px;
   background: rgba(0, 104, 136, 0.91);
   border: 3px solid #2fb3ff;

@@ -1,5 +1,4 @@
 import React from "react";
-import { observer } from "mobx-react-lite";
 
 import { ProgramBlock } from "../../common";
 import { Description, Image } from "./Description";
@@ -9,7 +8,7 @@ export const trainingProgramPosition = Object.freeze({
   right: "right",
 });
 
-function TrainingProgram(props) {
+export const TrainingProgram = (props) => {
   return (
     <ProgramBlock>
       {props.position === trainingProgramPosition.right && (
@@ -26,6 +25,4 @@ function TrainingProgram(props) {
       )}
     </ProgramBlock>
   );
-}
-
-export default observer(TrainingProgram);
+};

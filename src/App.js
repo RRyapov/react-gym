@@ -1,23 +1,14 @@
-import React, { useEffect, createContext } from "react";
-import Header from "./components/Header";
-import TrainingProgramsPage from "./pages/ProgramsPage";
-import DetailedTrainingProgramPage from "./pages/DetailedTrainingProgramPage";
-import MainPage from "./pages/MainPage";
+import React, { useEffect } from "react";
+import { Header } from "./components";
+import { ProgramsPage, DetailedTrainingProgramPage, MainPage } from "./pages";
 import { Routes, Route } from "react-router-dom";
 
-import {
-  Container,
-  MainBackground,
-  Background,
-  Footer,
-} from "./common/ui/Container";
+import { Container, MainBackground, Background, Footer } from "./common";
 import { observer } from "mobx-react-lite";
-import { programStorage } from "./stores/programsStore";
-
-export const ProgramContext = createContext();
+import { programStorage } from "./stores";
 
 function App() {
-  const { getAllPrograms, getProgram } = programStorage;
+  const { getAllPrograms } = programStorage;
 
   useEffect(() => {
     getAllPrograms();
@@ -28,16 +19,14 @@ function App() {
       <Background>
         <Container>
           <Header />
-          <ProgramContext.Provider value={{ getProgram }}>
-            <Routes>
-              <Route path="/" element={<MainPage />} />
-              <Route path="/programs" element={<TrainingProgramsPage />} />
-              <Route
-                path="/program/:id"
-                element={<DetailedTrainingProgramPage />}
-              />
-            </Routes>
-          </ProgramContext.Provider>
+          <Routes>
+            <Route path="/" element={<MainPage />} />
+            <Route path="/programs" element={<ProgramsPage />} />
+            <Route
+              path="/program/:id"
+              element={<DetailedTrainingProgramPage />}
+            />
+          </Routes>
         </Container>
       </Background>
       <Footer />

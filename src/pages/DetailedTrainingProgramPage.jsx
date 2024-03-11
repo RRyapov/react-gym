@@ -1,7 +1,7 @@
-import React, { Children, useState } from "react";
+import React, { useState } from "react";
+import { observer } from "mobx-react-lite";
+import { useParams } from "react-router-dom";
 
-import { ProductsTitlesOnMainPage } from "../common/ui/MainPage";
-import { SportArticleTitle } from "../common/ui/MainPage";
 import {
   ProgramBlock,
   ProgramImage,
@@ -12,21 +12,18 @@ import {
   ProgramPageBlock,
   ProgramLongRead,
   GeneralProgramPageBlock,
-  ProgramShortRead,
+  SportArticleTitle,
+  ProductsTitlesOnMainPage,
 } from "../common";
-import { programStorage } from "../stores/programsStore";
-import { observer } from "mobx-react-lite";
-import { useParams } from "react-router-dom";
-import ModalWindow from "../components/ModalWindow/ModalWindow";
-import { ModalTitle } from "../components/ModalWindow/style";
+import { programStorage } from "../stores";
+import { ModalTitle, ModalWindow } from "../components";
 
-function DetailedTrainingProgramPage() {
+export const DetailedTrainingProgramPage = observer(() => {
   const { getProgram } = programStorage;
   const { id } = useParams();
   const { imageUrl, name, longText, price } = getProgram(id) ?? {};
 
   const [activeModal, setActiveModal] = useState(false);
-  console.log(activeModal);
   return (
     <GeneralProgramPageBlock>
       <ProgramPageBlock>
@@ -58,6 +55,4 @@ function DetailedTrainingProgramPage() {
       </ModalWindow>
     </GeneralProgramPageBlock>
   );
-}
-
-export default observer(DetailedTrainingProgramPage);
+});

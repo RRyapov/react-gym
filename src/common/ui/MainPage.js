@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 import { FlexCenter, ButtonStyle } from "./Container";
 import {
   TitlePattern,
@@ -55,6 +56,7 @@ export const ProductCardTitle = styled.div`
 
 export const ProductCardButton = styled.button`
   ${ButtonStyle}
+  ${({ commonStyles }) => commonStyles ?? ""}
 `;
 
 export const BlueLine = styled.div`

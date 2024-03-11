@@ -34,7 +34,6 @@ export const Background = styled.div`
 `;
 
 export const Footer = styled.div`
-  /* position: fixed; */
   margin-bottom: auto;
 
   z-index: 10;

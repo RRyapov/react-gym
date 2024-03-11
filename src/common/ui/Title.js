@@ -1,4 +1,5 @@
 import { css } from "styled-components";
+
 import { FlexCenter } from "./Container";
 
 export const BoldTitles = css`
