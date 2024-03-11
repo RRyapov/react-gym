@@ -22,7 +22,10 @@ import {
 export const MainPage = () => (
   <MainSpace>
     <GeneralTitle>
-      <img src="./img/to-be-strong-title.png" alt="generalTitle" />
+      <img
+        src="https://i.postimg.cc/B6mXzMJV/to-be-strong-title.png"
+        alt="generalTitle"
+      />
     </GeneralTitle>
     <ProductsOnMainPage>
       <ProductsTitlesOnMainPage>
@@ -32,7 +35,10 @@ export const MainPage = () => (
       <ProductContainer>
         <ProductCardOnMainPage>
           <ProductCardImage>
-            <img src="./img/products/product-1.PNG" alt="protein-1" />
+            <img
+              src="https://i.postimg.cc/vZ78j3zt/product-1.png"
+              alt="protein-1"
+            />
           </ProductCardImage>
           <ProductCardTitle>
             <span>Optimum Nutrition protein</span>
@@ -44,7 +50,7 @@ export const MainPage = () => (
 
         <ProductCardOnMainPage>
           <ProductCardImage>
-            <img src="./img/bcaa-1.PNG" alt="bcaa-1" />
+            <img src="https://i.postimg.cc/3JmD8j1d/bcaa-1.png" alt="bcaa-1" />
           </ProductCardImage>
           <ProductCardTitle>
             <span>Mutant bcaa</span>
@@ -56,7 +62,10 @@ export const MainPage = () => (
 
         <ProductCardOnMainPage>
           <ProductCardImage>
-            <img src="./img/creatine-1.PNG" alt="creatine-1" />
+            <img
+              src="https://i.postimg.cc/fTcJnzWd/creatine-1.png"
+              alt="creatine-1"
+            />
           </ProductCardImage>
           <ProductCardTitle>
             <span>Optimum Nutrition creatine</span>
@@ -68,7 +77,10 @@ export const MainPage = () => (
       </ProductContainer>
     </ProductsOnMainPage>
     <BlueLine>
-      <img src="./img/blue-line.png" alt="blue-line-division" />
+      <img
+        src="https://i.postimg.cc/7ZBPwbF5/blue-line.png"
+        alt="blue-line-division"
+      />
     </BlueLine>
     <TrainerAdviceContainer>
       <ProductsTitlesOnMainPage>
@@ -86,7 +98,10 @@ export const MainPage = () => (
         подряд, то даже получасовая тренировка будет весьма эффективной
       </TrainerAdviceArticle>
       <TrainerAvatar>
-        <img src="./img/trainer-1.png" alt="trainer-1" />
+        <img
+          src="https://i.postimg.cc/13YSb2F6/trainer-1.png"
+          alt="trainer-1"
+        />
       </TrainerAvatar>
       <ProductCardTitle>
         <span style={{ "font-size": "9mm" }}>Алексей</span>
@@ -97,7 +112,10 @@ export const MainPage = () => (
       </ProductCardButton>
     </TrainerAdviceContainer>
     <BlueLine>
-      <img src="./img/blue-line.png" alt="blue-line-division" />
+      <img
+        src="https://i.postimg.cc/7ZBPwbF5/blue-line.png"
+        alt="blue-line-division"
+      />
     </BlueLine>
     <ShortReadSportArticle>
       <ProductsTitlesOnMainPage>
