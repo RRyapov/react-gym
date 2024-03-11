@@ -32,7 +32,7 @@ export const MainPage = () => (
       <ProductContainer>
         <ProductCardOnMainPage>
           <ProductCardImage>
-            <img src="./img/products/product-1.png" alt="protein-1" />
+            <img src="./img/products/product-1.PNG" alt="protein-1" />
           </ProductCardImage>
           <ProductCardTitle>
             <span>Optimum Nutrition protein</span>
@@ -44,7 +44,7 @@ export const MainPage = () => (
 
         <ProductCardOnMainPage>
           <ProductCardImage>
-            <img src="./img/bcaa-1.png" alt="bcaa-1" />
+            <img src="./img/bcaa-1.PNG" alt="bcaa-1" />
           </ProductCardImage>
           <ProductCardTitle>
             <span>Mutant bcaa</span>
@@ -56,7 +56,7 @@ export const MainPage = () => (
 
         <ProductCardOnMainPage>
           <ProductCardImage>
-            <img src="./img/creatine-1.png" alt="creatine-1" />
+            <img src="./img/creatine-1.PNG" alt="creatine-1" />
           </ProductCardImage>
           <ProductCardTitle>
             <span>Optimum Nutrition creatine</span>
